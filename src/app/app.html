@@ -1,1 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid row">
+  <app-card
+    [produto]="produtos"
+    (adicionarAoCarrinho)="produtos"
+    class="col-9 p-3"
+  ></app-card>
+  <app-listar-produtos
+    [produtos]="produtos"
+    class="col-3 p-3"
+    style="border-left: 2px solid black"
+  ></app-listar-produtos>
+</div>
 <router-outlet />
